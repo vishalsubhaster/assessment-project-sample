@@ -1,0 +1,20 @@
+<div class="card shadow-style">
+    <div class="card-body">
+        <table>
+            <tr>
+                <td>
+                    <h5 class="card-title" *ngIf="showProgressBar else noProgressBar">
+                        <app-circular-progress-bar [color]="color" [percentValue]="percent" [currentValue]="currentValue" [total]="80">
+                        </app-circular-progress-bar>
+                    </h5>
+                    <ng-template #noProgressBar>
+                        <h3>{{ currentValue }}</h3>
+                    </ng-template>
+                </td>
+                <td style="padding: 19px;" [ngStyle]="{ fontSize: percent<20?'10px':''}">
+                    {{cardText}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

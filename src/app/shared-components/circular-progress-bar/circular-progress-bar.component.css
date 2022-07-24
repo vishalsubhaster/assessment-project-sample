@@ -1,0 +1,44 @@
+.container {
+    height: 80px;
+    width: 80px;
+    background-color: #ffffff;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 59%;
+    left: 50%;
+    border-radius: 8px;
+    /* box-shadow: 20px 20px 40px rgba(60,60, 150,0.25); */
+    display: grid;
+    place-items: center;
+}
+
+.circular-progress {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circular-progress:before {
+    content: "";
+    position: absolute;
+    height: 76%;
+    width: 76%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-left: 12%;
+    margin-top: 12%;
+}
+
+.value-container {
+    position: absolute;
+    font-size: 2vw;
+    color: #231c3d;
+    margin-left: 31%;
+    margin-top: 27%;
+}
+
+.percent {
+    text-align: center;
+}

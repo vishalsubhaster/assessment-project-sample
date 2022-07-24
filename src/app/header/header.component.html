@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark bg-white" style="padding: 0;display: block;">
+    <div class="row">
+        <div class="width-correction grey-border-right left-padding">
+            <button type="button" class="navbar-toggler" (click)="sidebarNavService.toggleSideNav()">
+                <fa-icon [icon]="faBars"></fa-icon>
+            </button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+            <img class="responsive-img" src="../../assets/images/logo.png" alt="logo">
+        </div>
+        <div class="col-lg-6 col-md-5 col-sm-5 col-2 ml-12 pt-2">
+            <table>
+                <tr>
+                    <td style="width: 95%;">
+                        <h3>Executive Dashboard</h3>
+                    </td>
+                    <td>
+                        <span><fa-icon [icon]="faGavel"></fa-icon></span>
+                        <span><fa-icon [icon]="faUser"></fa-icon></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</nav>

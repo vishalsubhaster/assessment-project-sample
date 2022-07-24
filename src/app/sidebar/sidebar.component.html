@@ -1,0 +1,19 @@
+<nav id="sidebar" class="navbar-dark bg-white" [ngClass]="{'hidden': sidebarNavService.hideSideNav }">
+    <ul class="navbar-nav">
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="/">
+                <fa-icon [icon]="faHome"></fa-icon>
+            </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/page-2">
+                <fa-icon [icon]="faBriefCase"></fa-icon>
+            </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/page-3">
+                <fa-icon [icon]="faCalendar"></fa-icon>
+            </a>
+        </li>
+    </ul>
+</nav>

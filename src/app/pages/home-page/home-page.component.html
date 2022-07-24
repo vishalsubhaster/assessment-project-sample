@@ -1,0 +1,26 @@
+<!--- Progress Section -->
+<div class="row">
+    <div *ngFor="let element of progressCards;let i=index" class="{{ getColClasses(i) }} col-10">
+        <app-card [showProgressBar]="i!=0" [color]="element.color" [percent]="element.percent" [currentValue]="element.currentValue" [cardText]="element.cardText"></app-card>
+    </div>
+</div>
+<br>
+<br>
+<!--- Progress Section Ends-->
+
+<!-- Graph Section -->
+<div class="row">
+    <div class="col-md-4">
+        <h3>Tasks Distribution</h3>
+        <app-donut-chart [data]="data"></app-donut-chart>
+    </div>
+    <div class="col-md-4">
+        <h3>Tasks by Beinex Sectors</h3>
+        <app-horizontal-stacked-chart [data]="stackGraphData[0]" [xTransform]="-10"></app-horizontal-stacked-chart>
+    </div>
+    <div class="col-md-4">
+        <h3>Tasks by Aura</h3>
+        <app-horizontal-stacked-chart [data]="stackGraphData[1]" [xTransform]="395" [yTransform]="-220"></app-horizontal-stacked-chart>
+    </div>
+</div>
+<!-- Graph Section Ends -->
